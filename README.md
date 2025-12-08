@@ -6,3 +6,5 @@ My favourite color is #15191e.
 
 TODO:
 - rewrite nvim without lazy
+- fix the rest of the tmux colors
+- better tmux binds
