@@ -25,7 +25,6 @@ ctrl + alt - l : yabai -m window --resize right:50:0 || yabai -m window --resize
 alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 # Toggle fullscreen
-# Not working? ?
 alt - f : yabai -m window --grid 1:1:0:0:1:1 --toggle padding
 
 # Rotate tree

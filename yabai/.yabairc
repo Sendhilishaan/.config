@@ -23,3 +23,5 @@ yabai -m config window_gap 10
 # Mouse settings
 yabai -m config mouse_follows_focus off
 yabai -m config focus_follows_mouse off
+
+yabai -m rule --add app="^System Settings$" manage=off
