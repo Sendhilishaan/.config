@@ -1,4 +1,0 @@
-[[mgr.prepend_keymap]]
-on = [ "c" ]
-run = 'shell "code \"$0\"" --orphan'
-desc = "Open with VS Code"

@@ -1,2 +1,0 @@
-[filetype]
-rules = [{ name = "*/", fg = "cyan" }]
