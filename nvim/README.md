@@ -1,3 +1,14 @@
-# 💤 LazyVim
+## first nvim config without a distro
 
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+### plugins:
+- alpha (homescreen)
+- autopairs
+- blink cmp
+- lualine
+- mason
+- oil (my fav)
+- telescope (second fav)
+
+### TODO:
+- write native lsp without mason
+- fix colors
