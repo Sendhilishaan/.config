@@ -6,6 +6,10 @@ vim.env.PATH = vim.fn.stdpath("data") .. "/mason/bin:" .. vim.env.PATH
 vim.lsp.buf.hover()
 vim.lsp.enable('lua_ls')
 
+-- global settings and such
+vim.opt.winborder = "rounded"
+vim.opt.clipboard:append("unnamedplus")
+
 -- errors and such
 vim.diagnostic.config({
 	signs = false,

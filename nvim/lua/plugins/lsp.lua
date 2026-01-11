@@ -26,5 +26,6 @@ return {
 		local capabilities = require('blink.cmp').get_lsp_capabilities()
 		vim.lsp.config('lua_ls', {capabilities = capabilities})
 		vim.lsp.config('pyright', {capabilities = capabilities})
+		vim.lsp.config('clangd', {capabilities = capabilities})
 	end,
 }
