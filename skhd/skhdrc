@@ -1,4 +1,4 @@
-alt  - 1 : open -a "Zen"
+alt  - 1 : open -a "Firefox"
 alt  - 2 : open -a "Visual Studio Code"
 alt  - 3 : open -a "Microsoft OneNote"
 alt - 4 : open -a "iTerm"
