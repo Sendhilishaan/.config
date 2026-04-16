@@ -1,4 +1,4 @@
-local custom_cat = require'lualine.themes.catppuccin'
+local custom_cat = require('lualine.themes.catppuccin-mocha')
 local color = '#15171e'
 custom_cat.normal.c.bg = color
 
