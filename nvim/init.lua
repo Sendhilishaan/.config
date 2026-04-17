@@ -3,8 +3,8 @@ require("config.keymaps")
 
 -- lsp settigns
 vim.env.PATH = vim.fn.stdpath("data") .. "/mason/bin:" .. vim.env.PATH
-vim.lsp.buf.hover()
 vim.lsp.enable('lua_ls')
+vim.lsp.enable('rust_analyzer')
 
 -- global settings and such
 vim.opt.winborder = "rounded"

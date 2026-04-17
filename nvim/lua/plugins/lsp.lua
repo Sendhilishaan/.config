@@ -16,17 +16,18 @@ return {
 	},
 	opts = {
 		servers = {
-			-- Add servers here to add to blink
+			-- add servers here to add to blink
 			lua_ls = {},
-			pyright = {}
+			pyright = {},
+			clangd = {},
+			rust_analyzer = {}
 		}
 	},
 	config = function()
-		-- I dont even think i need this with mason-lspconfig
 		local capabilities = require('blink.cmp').get_lsp_capabilities()
 		vim.lsp.config('lua_ls', {capabilities = capabilities})
 		vim.lsp.config('pyright', {capabilities = capabilities})
 		vim.lsp.config('clangd', {capabilities = capabilities})
-		vim.lsp.config('rust-analyzer', {capabilities = capabilities})
+		vim.lsp.config('rust_analyzer', {capabilities = capabilities})
 	end,
 }
