@@ -1,11 +1,27 @@
-  return {
-    "goolord/alpha-nvim",
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
-    config = function()
-      local startify = require("alpha.themes.startify")
-      startify.file_icons.provider = "devicons"
-      require("alpha").setup(
-        startify.config
-      )
+return {
+	"goolord/alpha-nvim",
+	dependencies = { 'nvim-tree/nvim-web-devicons' },
+	event = "VimEnter",
+	config = function()
+		local alpha = require("alpha")
+		local startify = require("alpha.themes.startify")
+
+		startify.section.header.val = {
+		[[                                                                     ]],
+		[[       ███████████           █████      ██                     ]],
+		[[      ███████████             █████                             ]],
+		[[      ████████████████ ███████████ ███   ███████     ]],
+		[[     ████████████████ ████████████ █████ ██████████████   ]],
+		[[    █████████████████████████████ █████ █████ ████ █████   ]],
+		[[  ██████████████████████████████████ █████ █████ ████ █████  ]],
+		[[ ██████  ███ █████████████████ ████ █████ █████ ████ ██████ ]],
+		[[ ██████   ██  ███████████████   ██ █████████████████ ]],
+		[[ ██████   ██  ███████████████   ██ █████████████████ ]],
+		}
+
+		alpha.setup(startify.opts)
+
+		startify.file_icons.provider = "devicons"
+		require("alpha").setup(startify.config)
     end,
   }
